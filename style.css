@@ -1,3 +1,7 @@
+html,
+body {
+  overflow-x: hidden;
+}
 /* shared styles */
 .flex {
   display: flex;
@@ -93,21 +97,83 @@ main {
 #quick-list {
   font-weight: 500;
 }
+/* experience section */
+.experience-section {
+  margin-top: 100px;
+}
+.experience-container {
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.experience-container h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  border-left: 5px solid #ff900e;
+  padding: 10px;
+}
+.experience-container p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.feature-card {
+  padding: 20px;
+  width: 586px;
+  height: 171px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+.feature-card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.feature-card p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.experience-btn {
+  color: white;
+  padding: 46px 42px;
+  background-color: #ff900e;
+  border: none;
+  border-radius: 10px;
+  margin-top: -100px;
+  margin-left: -50px;
+}
+.experience-btn-b {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.experience-img {
+  max-width: 100%;
+}
+
 /* responsive section */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .feature-content {
+  .feature-content,
+  .experience-container {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  /* .feature-description {
-    margin-right: 30px;
-  } */
   .feature-images {
     grid-template-columns: 1fr;
   }
+  .feature-description {
+    margin-left: 50px;
+    justify-content: center;
+  }
+  .experience-content {
+    margin: 0 auto;
+  }
+  .experience-btn {
+    margin: 0;
+    margin-left: 35px;
+  }
+  .feature-card {
+    width: 90%;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
 }
